@@ -28,6 +28,7 @@ wheels/
 # Environment variables
 .env
 claude.env
+gemini.env
 
 # Logs
 logs/*.log

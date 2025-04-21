@@ -1,0 +1,47 @@
+{
+  "P001": {
+    "product_id": "P001",
+    "name": "Smartphone",
+    "quantity": 49,
+    "location": "storage_a",
+    "min_threshold": 10,
+    "max_capacity": 100,
+    "last_updated": "2025-04-21T06:21:40.480744"
+  },
+  "P002": {
+    "product_id": "P002",
+    "name": "Laptop",
+    "quantity": 20,
+    "location": "storage_a",
+    "min_threshold": 5,
+    "max_capacity": 50,
+    "last_updated": "2025-04-21T06:21:40.229312"
+  },
+  "P003": {
+    "product_id": "P003",
+    "name": "Tablet",
+    "quantity": 30,
+    "location": "storage_b",
+    "min_threshold": 8,
+    "max_capacity": 80,
+    "last_updated": "2025-04-21T06:21:40.230312"
+  },
+  "P004": {
+    "product_id": "P004",
+    "name": "Headphones",
+    "quantity": 100,
+    "location": "storage_b",
+    "min_threshold": 20,
+    "max_capacity": 200,
+    "last_updated": "2025-04-21T06:21:40.230312"
+  },
+  "P005": {
+    "product_id": "P005",
+    "name": "Smartwatch",
+    "quantity": 15,
+    "location": "storage_c",
+    "min_threshold": 5,
+    "max_capacity": 50,
+    "last_updated": "2025-04-21T06:21:40.230312"
+  }
+}

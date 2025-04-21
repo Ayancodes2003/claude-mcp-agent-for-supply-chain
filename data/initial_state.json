@@ -1,0 +1,218 @@
+{
+  "name": "Smart Warehouse",
+  "inventory": {
+    "P001": {
+      "name": "Smartphone",
+      "quantity": 50,
+      "location": "storage_a",
+      "min_threshold": 10,
+      "needs_restock": false
+    },
+    "P002": {
+      "name": "Laptop",
+      "quantity": 20,
+      "location": "storage_a",
+      "min_threshold": 5,
+      "needs_restock": false
+    },
+    "P003": {
+      "name": "Tablet",
+      "quantity": 30,
+      "location": "storage_b",
+      "min_threshold": 8,
+      "needs_restock": false
+    },
+    "P004": {
+      "name": "Headphones",
+      "quantity": 100,
+      "location": "storage_b",
+      "min_threshold": 20,
+      "needs_restock": false
+    },
+    "P005": {
+      "name": "Smartwatch",
+      "quantity": 15,
+      "location": "storage_c",
+      "min_threshold": 5,
+      "needs_restock": false
+    }
+  },
+  "agvs": {
+    "AGV001": {
+      "name": "Picker Bot 1",
+      "location": "charging_station",
+      "status": "idle",
+      "battery_level": 100.0,
+      "current_load": {},
+      "is_available": true
+    },
+    "AGV002": {
+      "name": "Picker Bot 2",
+      "location": "storage_a",
+      "status": "idle",
+      "battery_level": 85.0,
+      "current_load": {},
+      "is_available": true
+    },
+    "AGV003": {
+      "name": "Heavy Lifter 1",
+      "location": "receiving",
+      "status": "idle",
+      "battery_level": 90.0,
+      "current_load": {},
+      "is_available": true
+    }
+  },
+  "orders": {
+    "27121e45-4951-4106-a098-c2b8a3f5cd02": {
+      "customer_id": "C001",
+      "status": "processing",
+      "priority": 2,
+      "items": [
+        {
+          "product_id": "P001",
+          "quantity": 2
+        },
+        {
+          "product_id": "P004",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:17:06.975117"
+    },
+    "bf479a47-39b4-4999-85f6-46285e7740e0": {
+      "customer_id": "C002",
+      "status": "pending",
+      "priority": 1,
+      "items": [
+        {
+          "product_id": "P002",
+          "quantity": 1
+        },
+        {
+          "product_id": "P003",
+          "quantity": 1
+        },
+        {
+          "product_id": "P005",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:17:06.979124"
+    },
+    "019d70f8-369d-4fe5-9126-cbc143d072d9": {
+      "customer_id": "C001",
+      "status": "pending",
+      "priority": 2,
+      "items": [
+        {
+          "product_id": "P001",
+          "quantity": 2
+        },
+        {
+          "product_id": "P004",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:17:16.195090"
+    },
+    "47e00311-6050-413c-8cad-ff3a2b42d4a0": {
+      "customer_id": "C002",
+      "status": "pending",
+      "priority": 1,
+      "items": [
+        {
+          "product_id": "P002",
+          "quantity": 1
+        },
+        {
+          "product_id": "P003",
+          "quantity": 1
+        },
+        {
+          "product_id": "P005",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:17:16.195601"
+    },
+    "574e79a9-f776-42ef-b4d6-eac66b3116e0": {
+      "customer_id": "C001",
+      "status": "pending",
+      "priority": 2,
+      "items": [
+        {
+          "product_id": "P001",
+          "quantity": 2
+        },
+        {
+          "product_id": "P004",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:20:05.122813"
+    },
+    "7c20118c-1e94-4a38-ac38-c0fb5592fc17": {
+      "customer_id": "C002",
+      "status": "pending",
+      "priority": 1,
+      "items": [
+        {
+          "product_id": "P002",
+          "quantity": 1
+        },
+        {
+          "product_id": "P003",
+          "quantity": 1
+        },
+        {
+          "product_id": "P005",
+          "quantity": 1
+        }
+      ],
+      "created_at": "2025-04-21T06:20:05.124321"
+    }
+  },
+  "locations": {
+    "receiving": {
+      "type": "dock",
+      "capacity": 10
+    },
+    "shipping": {
+      "type": "dock",
+      "capacity": 10
+    },
+    "storage_a": {
+      "type": "storage",
+      "capacity": 100
+    },
+    "storage_b": {
+      "type": "storage",
+      "capacity": 100
+    },
+    "storage_c": {
+      "type": "storage",
+      "capacity": 100
+    },
+    "picking_station": {
+      "type": "workstation",
+      "capacity": 5
+    },
+    "packing_station": {
+      "type": "workstation",
+      "capacity": 5
+    },
+    "charging_station": {
+      "type": "charging",
+      "capacity": 3
+    }
+  },
+  "stats": {
+    "orders_processed": 0,
+    "items_picked": 0,
+    "items_restocked": 0,
+    "agv_movements": 0,
+    "last_updated": "2025-04-21T06:20:04.892161"
+  },
+  "timestamp": "2025-04-21T06:20:05.124837"
+}

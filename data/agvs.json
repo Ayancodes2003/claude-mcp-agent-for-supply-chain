@@ -1,0 +1,34 @@
+{
+  "AGV001": {
+    "agv_id": "AGV001",
+    "name": "Picker Bot 1",
+    "location": "storage_a",
+    "status": "idle",
+    "battery_level": 93.0,
+    "max_capacity": 50.0,
+    "current_load": {
+      "P001": 1
+    },
+    "last_updated": "2025-04-21T06:21:40.481742"
+  },
+  "AGV002": {
+    "agv_id": "AGV002",
+    "name": "Picker Bot 2",
+    "location": "storage_a",
+    "status": "idle",
+    "battery_level": 85.0,
+    "max_capacity": 50.0,
+    "current_load": {},
+    "last_updated": "2025-04-21T06:21:40.231313"
+  },
+  "AGV003": {
+    "agv_id": "AGV003",
+    "name": "Heavy Lifter 1",
+    "location": "receiving",
+    "status": "idle",
+    "battery_level": 90.0,
+    "max_capacity": 100.0,
+    "current_load": {},
+    "last_updated": "2025-04-21T06:21:40.231313"
+  }
+}
